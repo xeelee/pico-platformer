@@ -60,4 +60,4 @@ end
 * `3` (0x8) - enable ceiling collision
 * `7` (0x80) - force display tile (by default only floor tiles are being displayed)
 
-## See and play [sample game](https://titil.itch.io/pico-platfomer)
+## See and play [sample game](https://titil.itch.io/pico-platformer)
