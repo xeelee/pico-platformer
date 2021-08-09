@@ -223,14 +223,14 @@ function new_timer(interval, on_timeout, on_reset, delay)
 			end
 			ticks+=1
 			if ticks%interval==0 then
-				local d=on_timeout()
+				local d=on_timeout(self)
 				if d then
 					num_ticks_wait=d
 				end
 			end
 		end,
 		reset=function(self)
-			on_reset()
+			on_reset(self)
 			ticks=0
 			num_ticks_wait=delay
 		end
