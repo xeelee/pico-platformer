@@ -149,7 +149,7 @@ menu={
 						lives:update()
 					end,
 					function(obj_data) -- on_collide_obj
-						if not lives:can_be_hit() then
+						if not lives:can_be_hit() and not obj_data.dangerous then
 							return
 						end
 						if obj_data.collectible then
