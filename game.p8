@@ -39,14 +39,14 @@ function new_bird(pos)
 	local actor=new_actor(8, pos, 1)
 	local anim=new_anim(actor, 2, 20)
 	local movement=new_acc_movement(actor, 0.25, 1.1, 1.1, true)
-	return {actor=actor, anim=anim, movement=movement, margin=-1}
+	return {actor=actor, anim=anim, movement=movement}
 end
 
 function new_spider(pos)
 	local actor=new_actor(10, pos, 1)
 	local anim=new_anim(actor, 2, 25)
 	local movement=new_acc_movement(actor, 0.25, 0.4, 0.4, true)
-	return {actor=actor, anim=anim, movement=movement, margin=-1}
+	return {actor=actor, anim=anim, movement=movement}
 end
 
 function new_gem(pos)
